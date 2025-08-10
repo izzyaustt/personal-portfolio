@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--icon importsss-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>"
+</head>
+<body>
+    <!--first doing the navigation bar -->
+    
+
+    <header class = "header">
+        <i class='bx bx-menu' id ="menu-icon"></i>
+        <nav class = "navbar">
+
+            <!--doing an unordered list for nav bar components-->
+            
+            <a href = "#aboutme" class="active">About Me</a>
+            <a href = "#exp">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href = "#contact">Contact</a>
+        </nav>
+
+    
+    </header>
+
+    <!--now for the about me section-->
+    <section class="about" id="aboutme">
+        <div class = "abtme-content">
+            <h3>Hello World,</h3>
+            <h1>I'm <span>Isabella</span></h1>
+            <!--<h3>I'm a computer science student at the University of Central Florida!</h3>-->
+            <p>And I'm pursuing Computer Science at the University of Central Florida!</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/isabella-austin-079957360/" target = "_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/izzyaustt" target = "_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" target = "_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="files/resume2025fall.pdf" class="button">Resume here!</a>
+        </div>
+        <div class="abtme-img">
+            <div class = "headshot-wrapper">
+            <img src="img/headshot2.jpeg" alt="photo of me" class="headshot-pic">
+            </div>
+        </div>
+    </section>
+
+    <!--experience section design-->
+    <section class="exp" id = "exp">
+        <div class = "exp-content">
+            <h2 class = "heading">My Experience!</h2>
+            <div class = "exp-container">
+                <div class= "exp-box">
+                    <i class="bx bxl-heart-square"></i>
+                    <h3>Girl's Who Code Graphic Deisgner</h3>
+                    <p>As a graphic designer, I focus on creating cohesive visual identities across all platforms and digital media, merch, and branding.
+                        Using tools like Canva Pro, I manage designs to ensure a good representation of the Girls Who Gode goals and timeline. I work close with the executive board to deliver clear, impactful designs to further our initiative.
+                    </p>
+                </div>
+
+                <div class= "exp-box">
+                    <i class="bx bxl-heart-square"></i>
+                    <h3>Tech Stack</h3>
+                    <p>Launguages I have experience with:</p>
+                    <div class="tech-stack">
+                        <a href="#"><img src="img/c-icon.png" alt="C" class="tech-icon-img">
+                        <a href="#"><i class='bx bxl-java'></i></a>
+                        <a href="#"><i class='bx bxl-html5'></i></a>
+                        <a href="#"><i class='bx bxl-css3'></i></a>
+                    </div>
+                </div>
+
+                <div class= "exp-box">
+                    <i class="bx bxl-heart-square"></i>
+                    <h3>Teacher Assistant</h3>
+                    <p>During previous summers, I provided academic support to help below grade level elementary students get back on target.
+                        I collaborated with the teacher to create lesson plans that suited diverse needs and worked one on one help to the students. I also helped grade papers, organize files, and facilitate a structured classroom setting. 
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!--project section-->
+    <section class="projects" id = "projects">
+        <h2 class ="heading">My <span>Projects</span></h2>
+        <div class = "project-container">
+            <div class="project-box">
+                <img src = "img/card.png" alt="first project">
+                <div class="layer">
+                    <h4>CSS Valentine's Day Card</h4>
+                    <p>An in progress exporation into making a cafe simulator using GameMaker.</p>
+                    <a href="https://github.com/izzyaustt/ValentinesCard" target ="_blank"><i class ='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src = "img/project1.jpg" alt="first project">
+                <div class="layer">
+                    <h4>Game Development</h4>
+                    <p>An in progress exporation into making a cafe simulator using GameMaker.</p>
+                    <a href="#"><i class ='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src = "img/project-graphic.jpg" alt="first project">
+                <div class="layer">
+                    <h4>Web Development</h4>
+                    <p>This website! My exploration into a interactive, visually interesting website. I used HTML, CSS and Javascript!</p>
+                    <a href="https://github.com/izzyaustt/personal-portfolio"><i class ='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src = "img/rpgsite.png" alt="first project">
+                <div class="layer">
+                    <h4>Full Stack Application</h4>
+                    <p>This website! My exploration into a interactive, visually interesting website. I used HTML, CSS and Javascript!</p>
+                    <a href="https://github.com/izzyaustt/fullstack-rpgsearchsite"><i class ='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact sections-->
+    <section class="contact" id = "contact">
+        <h2 class = "heading"> Let's <span>Chat!</span></h2>
+
+        <form action = "https://formspree.io/f/meozoaqe" method = "POST">
+            <div class = "input-box">
+                <input type = "text" name="name" placeholder="Name">
+                <input type = "email" name="email" placeholder="Email Address">
+            </div>
+            <div class = "input-box">
+                <input type = "number" placeholder="Phone Number">
+                <input type = "text" placeholder="Email Subject">
+            </div>
+            <textarea name = "message" placeholder="Your Message"></textarea>
+            <input type = "submit" value = "Send" class="button">
+        </form>
+
+    </section>
+
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!--js-->
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>
